@@ -25,9 +25,9 @@ const OrderDetails = () => {
     setLoading(false);
   }, [id]);
 
-  useEffect(() => {
-    fetchOrder();
-  }, [id]);
+useEffect(() => {
+  fetchOrder();
+}, [fetchOrder]);
 
 
   const handleStatusChange = async (newStatus) => {
